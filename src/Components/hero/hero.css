@@ -1,0 +1,164 @@
+.hero__main__container {
+    background-image: url("https://shanereact.ibthemespro.com/img/slider/3.jpg");
+    height: 100vh;
+    position: relative;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    top: -60px;
+}
+
+.shane_tm_hero {
+    clear: both;
+    float: left;
+
+    position: relative;
+    width: 100%;
+}
+
+.shane_tm_all_wrap,
+.shane_tm_all_wrap * {
+    box-sizing: border-box;
+}
+
+.frame-layout__particles {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.shane_tm_all_wrap * {
+    box-sizing: border-box;
+}
+
+.home-four .shane_tm_hero .background {
+    width: 100% !important;
+}
+
+.home-four .shane_tm_hero[data-style=one] .background {
+    -webkit-clip-path: none !important;
+    clip-path: none !important;
+}
+
+.shane_tm_hero .container {
+    height: 100%;
+}
+
+.shane_tm_hero .container {
+    position: static;
+}
+
+.shane_tm_all_wrap * {
+    box-sizing: border-box;
+}
+
+.container {
+    clear: both;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    padding: 0 40px;
+    position: relative;
+    width: 100%;
+}
+
+/* hero text container */
+
+.hero__text {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.span__text {
+    text-transform: uppercase;
+    font-size: 60px;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-weight: 900;
+}
+
+
+.btn__upper {
+    text-transform: uppercase;
+}
+
+.slider {
+    height: 50px;
+    overflow: hidden;
+}
+
+.slider {
+    color: #fff;
+    height: 95px;
+    /* margin-bottom: 50px; */
+    box-sizing: border-box;
+}
+
+.slider-text1 {
+    /* background: lightgreen; */
+    animation: slide 5s linear infinite;
+}
+
+/* @keyframes slide {
+    0% {
+        margin-top: 0px;
+    }
+
+    33% {
+        margin-top: -65px;
+    }
+
+    66% {
+        margin-top: -130px;
+    }
+
+    100% {
+        margin-top: 195px;
+    }
+
+} */
+
+/* @keyframes slide {
+    0% {
+        margin-top: -150px;
+    }
+
+    5% {
+        margin-top: -100px;
+    }
+
+    33% {
+        margin-top: -180px;
+    }
+
+    38% {
+        margin-top: -130px;
+    }
+
+    66% {
+        margin-top: -80px;
+    }
+
+    71% {
+        margin-top: 0px;
+    }
+
+    100% {
+        margin-top: 0px;
+    }
+} */
+
+.btn {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+}

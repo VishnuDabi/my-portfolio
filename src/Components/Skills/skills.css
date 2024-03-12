@@ -1,0 +1,74 @@
+.skill__section {
+    width: 100%;
+    overflow: hidden;
+}
+
+.skills__container {
+    padding: 20px 40px;
+    display: flex;
+    width: min(1200px, 100%);
+    margin: auto;
+    gap: 40px;
+    transform: translateX(-20%);
+}
+
+.skills__container__active {
+    padding: 20px 40px;
+    display: flex;
+    width: min(1200px, 100%);
+    margin: auto;
+    gap: 40px;
+    transform: translateX(0%);
+    animation: slideup 0.5s forwards;
+}
+
+@keyframes slideup {
+    from {
+        transform: translateX(-20%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+
+
+.skills__childs {
+    flex-basis: 50%;
+}
+
+.skills__name {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.progress__bar {
+    background: rgba(0, 0, 0, .05);
+    height: 6px;
+    min-width: 100%;
+    position: relative;
+    width: 100%;
+    border-radius: 100px;
+}
+
+.progress-value {
+
+    /* Set default value */
+    animation: load 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #000;
+    height: 6px;
+
+    /* Use CSS variable to set width */
+}
+
+/* @keyframes load {
+    from {
+        width: 0;
+    }
+
+    to {}
+} */

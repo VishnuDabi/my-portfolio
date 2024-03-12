@@ -1,0 +1,31 @@
+.header__main__container {
+    position: relative;
+    display: flex;
+    background-color: transparent;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15%;
+    height: 60px;
+    z-index: 99;
+    color: white;
+}
+
+.logo__text {
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-size: 24px;
+}
+
+.header__child {
+    display: flex;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+}
+
+.nav__items {
+    padding: 0 20px;
+}
