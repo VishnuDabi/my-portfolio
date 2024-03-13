@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./about.css";
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
-
   useEffect(() => {
     const handleScroll = () => {
       const sidebar = document.querySelector(".about__child1");
@@ -40,7 +39,8 @@ const About = () => {
             success. I enjoy every step of the design process, from discussion
             and collaboration.
           </p>
-          <button className="btn">Download CV</button>
+
+          <button className="btn__dark">Download CV</button>
         </div>
       </div>
     </section>

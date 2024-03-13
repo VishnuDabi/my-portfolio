@@ -1,24 +1,31 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./skills.css";
+
 const Skills = () => {
-  const [data, setData] = useState({
-    webDevelopment: "90%",
-    javascript: "80%",
-    reactJs: "90%",
-    htmlCss: "85%",
-  });
+  const [data, setData] = useState([
+    {
+      name: "Web Development",
+      skillLevel: "90%",
+    },
+    {
+      name: "JavaScript",
+      skillLevel: "80%",
+    },
+    {
+      name: "React js",
+      skillLevel: "90%",
+    },
+    {
+      name: "HTML/CSS",
+      skillLevel: "85%",
+    },
+  ]);
   const [isVisible, setIsVisible] = useState(false);
+  const skillRef = useRef(null);
 
-  const progressBars = document.querySelectorAll(".progress-value");
-
-  progressBars.forEach((bar) => {
-    const width = bar.getAttribute("data-width");
-    bar.style.setProperty("--progress-width", width);
-  });
   useEffect(() => {
     const handleScroll = () => {
-      const sidebar = document.querySelector(".skill__section");
-      const rect = sidebar.getBoundingClientRect();
+      const rect = skillRef.current.getBoundingClientRect();
       const isVisible = rect.top < window.innerHeight && rect.bottom >= 50;
 
       setIsVisible(isVisible);
@@ -30,12 +37,14 @@ const Skills = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <section className="skill__section">
       <div
         className={`${
           isVisible ? "skills__container__active " : "skills__container"
         }`}
+        ref={skillRef}
       >
         <div className="skills__childs">
           <h1>I have high skills in developing and programming</h1>
@@ -46,46 +55,22 @@ const Skills = () => {
           </p>
         </div>
         <div className="skills__childs">
-          <p className="skills__name">
-            <span>Web Development</span>
-            <span>{data.webDevelopment}</span>
-          </p>
-          <div className="progress__bar">
-            <div
-              className="progress-value"
-              style={{ width: data.webDevelopment }}
-            ></div>
-          </div>
-          <p className="skills__name">
-            <span>React JS</span>
-            <span>{data.reactJs}</span>
-          </p>
-          <div className="progress__bar">
-            <div
-              className="progress-value"
-              style={{ width: data.reactJs }}
-            ></div>
-          </div>
-          <p className="skills__name">
-            <span>JavaScript</span>
-            <span>{data.javascript}</span>
-          </p>
-          <div className="progress__bar">
-            <div
-              className="progress-value"
-              style={{ width: data.javascript }}
-            ></div>
-          </div>
-          <p className="skills__name">
-            <span>HTML/CSS</span>
-            <span>{data.htmlCss}</span>
-          </p>
-          <div className="progress__bar">
-            <div
-              className="progress-value"
-              style={{ width: data.htmlCss }}
-            ></div>
-          </div>
+          {data.map(({ name, skillLevel }, index) => {
+            return (
+              <div key={index}>
+                <p className="skills__name">
+                  <span>{name}</span>
+                  <span>{skillLevel}</span>
+                </p>
+                <div
+                  className={`progress__bar ${
+                    isVisible ? "progress-value" : ""
+                  }`}
+                  style={{ width: skillLevel }}
+                ></div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

@@ -4,7 +4,7 @@
 }
 
 .skills__container {
-    padding: 20px 40px;
+    padding: 60px 40px;
     display: flex;
     width: min(1200px, 100%);
     margin: auto;
@@ -13,7 +13,7 @@
 }
 
 .skills__container__active {
-    padding: 20px 40px;
+    padding: 60px 40px;
     display: flex;
     width: min(1200px, 100%);
     margin: auto;
@@ -47,7 +47,6 @@
 .progress__bar {
     background: rgba(0, 0, 0, .05);
     height: 6px;
-    min-width: 100%;
     position: relative;
     width: 100%;
     border-radius: 100px;
@@ -65,10 +64,19 @@
     /* Use CSS variable to set width */
 }
 
-/* @keyframes load {
+@keyframes load {
     from {
         width: 0;
     }
 
     to {}
-} */
+}
+
+@media screen and (max-width:993px) {
+
+    .skills__container,
+    .skills__container__active {
+        flex-direction: column;
+     
+    }
+}
