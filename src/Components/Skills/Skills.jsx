@@ -62,12 +62,12 @@ const Skills = () => {
                   <span>{name}</span>
                   <span>{skillLevel}</span>
                 </p>
-                <div
-                  className={`progress__bar ${
-                    isVisible ? "progress-value" : ""
-                  }`}
-                  style={{ width: skillLevel }}
-                ></div>
+                <div className="progress__bar">
+                  <div
+                    className={`${isVisible ? "progress-value" : ""}`}
+                    style={{ width: skillLevel }}
+                  ></div>
+                </div>
               </div>
             );
           })}
@@ -76,5 +76,4 @@ const Skills = () => {
     </section>
   );
 };
-
 export default Skills;

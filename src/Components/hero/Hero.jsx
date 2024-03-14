@@ -1,9 +1,11 @@
 import React from "react";
 import "./hero.css";
+import ParticleAnimation from "../particles/ParticlesCanvas";
 
 const Hero = () => {
   return (
     <div className="hero__main__container">
+      {/* <ParticleAnimation /> */}
       {/* <div className="shane_tm_hero" id="home" data-style="one">
         <div id="tsparticles">
           <canvas

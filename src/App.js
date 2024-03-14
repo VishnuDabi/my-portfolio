@@ -6,6 +6,8 @@ import "./App.css";
 import Skills from "./Components/Skills/Skills";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import SliderComponent from "./Components/Slider/Slider";
+import Contact from "./Components/contact/Contact";
+import Footer from "./Components/Footer/Footer";
 const App = () => {
   return (
     <div>
@@ -15,6 +17,8 @@ const App = () => {
       <Skills />
       <Portfolio />
       <SliderComponent />
+      <Contact />
+      <Footer />
     </div>
   );
 };
