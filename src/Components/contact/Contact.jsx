@@ -4,6 +4,13 @@ import "./contact.css";
 const Contact = () => {
   const [formShow, setFormShow] = useState(false);
 
+  const handleShow = () => {
+    setFormShow(!formShow);
+  };
+  const submitHandler = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <div className="contact__container">
       <div className="bg__img__container">
@@ -12,36 +19,19 @@ const Contact = () => {
           src="https://shanereact.ibthemespro.com/img/svg/paper.svg"
           alt=""
         />
-        <div
-          className={formShow ? "text__container active" : "text__container"}
-        >
-          <div className="contact__me">
+        {!formShow && (
+          <div className={`text__container`}>
             <h1>Let's work together!</h1>
-            <button
-              className="btn-contact"
-              onClick={() => setFormShow(!formShow)}
-            >
-              Contact me
+            <button className="btn-contact" onClick={handleShow}>
+              Let's Connect
             </button>
           </div>
-          {formShow && (
-            <form className="form">
-              <label>
-                Name:
-                <input type="text" />
-              </label>
-              <label>
-                Email:
-                <input type="email" />
-              </label>
-              <label>
-                Message:
-                <textarea></textarea>
-              </label>
-              <button type="submit">Submit</button>
-            </form>
-          )}
-        </div>
+        )}
+        {formShow && (
+          <div>
+            <form onSubmit={(event) => submitHandler(event)}></form>
+          </div>
+        )}
       </div>
     </div>
   );
