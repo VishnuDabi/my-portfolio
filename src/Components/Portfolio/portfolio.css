@@ -36,6 +36,7 @@
     z-index: 20;
     bottom: 0px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 0 20px;
     transform: translateY(50px);
@@ -62,6 +63,10 @@ a {
 }
 
 @media screen and (max-width:993px) {
+    .portfolio__container {
+        padding: 0 20px;
+    }
+
     .my__projects {
         display: block;
     }
@@ -79,6 +84,10 @@ a {
     .project__img {
         object-fit: cover;
         object-position: 60%;
+    }
+
+    .portfolio__container {
+        padding: 0 10px;
     }
 
 

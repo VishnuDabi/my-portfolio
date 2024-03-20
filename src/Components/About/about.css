@@ -10,7 +10,8 @@
     /* gap: 20px; */
 }
 
-.about__child1 {
+.about__child1,
+.about__child {
     flex: 1 1 50%;
     display: grid;
 
@@ -45,23 +46,27 @@
     transition: transform 0.5s ease;
 }
 
-.about__text>h1 {
+.about__text,
+.visible>h1 {
     font-size: 36px;
     font-weight: 800;
     margin: 0;
+    padding: 10px 0;
 }
 
-.about__text>p {
+.about__text,
+.visible>p {
     letter-spacing: .5px;
-    line-height: 35px;
     font-size: 18px;
     font-weight: 400;
-    /* padding-right: 20px; */
+    padding-top: 10px;
+    padding-bottom: 15px;
 }
 
 .img {
     height: 100%;
     width: 100%;
+    object-fit: cover;
 }
 
 

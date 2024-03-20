@@ -38,7 +38,17 @@
     flex-basis: 50%;
 }
 
+.skills__childs>div {
+    padding: 0 0 15px 0;
+}
+
+.skills__childs>h1,
+p {
+    padding: 10px 0;
+}
+
 .skills__name {
+    padding-bottom: 10px;
     display: flex;
     justify-content: space-between;
 

@@ -1,14 +1,26 @@
 .header__main__container {
-    position: relative;
+    position: fixed;
     display: flex;
-    background-color: transparent;
+    left: 50%;
+    transform: translate(-50%, 0);
     justify-content: space-between;
     align-items: center;
     padding: 0 15%;
+
+    
     height: 60px;
     z-index: 99;
     color: white;
 }
+
+.bg__transparent {
+    background-color: transparent;
+}
+
+.bg__black {
+    background-color: #000;
+}
+
 
 .logo__text {
     text-transform: uppercase;

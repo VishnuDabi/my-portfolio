@@ -1,5 +1,6 @@
 .hero__main__container {
-    background-image: url("https://shanereact.ibthemespro.com/img/slider/3.jpg");
+    /* background-image: url("https://shanereact.ibthemespro.com/img/slider/3.jpg"); */
+    background-image: url(../../../public/images/hero.jpg);
     height: 100vh;
     position: relative;
     background-size: 100% 100%;
@@ -115,4 +116,28 @@
     padding: 15px 30px;
     font-size: 18px;
     margin-top: 20px;
+}
+
+@media screen and (max-width:1200px) {
+    .hero__main__container {
+        height: 60vh;
+    }
+
+}
+
+@media screen and (max-width:850px) {
+    .hero__main__container {
+        background-size: cover;
+        background-position: 75%;
+
+    }
+
+}
+
+@media screen and (max-width:441px) {
+    .hero__main__container {
+        height: 50vh;
+
+    }
+
 }

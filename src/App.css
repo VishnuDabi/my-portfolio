@@ -2,6 +2,8 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .roboto-thin {
@@ -82,5 +84,14 @@
   padding: 15px 30px;
   font-size: 18px;
   border: none;
+  border: 1px solid transparent;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
 
+.btn__dark:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid black;
+  transition: all 0.4s ease-in-out;
 }
