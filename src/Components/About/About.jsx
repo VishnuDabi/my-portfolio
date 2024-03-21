@@ -50,11 +50,16 @@ const About = () => {
             Creative Independent Web Developer based in INDIA
           </h1>
           <p>
-            I'm web designer, and I'm very passionate and dedicated to my work.
-            With 20 years experience as a professional web developer, I have
-            acquired the skills and knowledge necessary to make your project a
-            success. I enjoy every step of the design process, from discussion
-            and collaboration.
+            As a proficient React.js developer, I possess a diverse skill set
+            that includes expertise in React.js, Redux, JavaScript, Bootstrap,
+            Material UI, and Github. With a keen eye for detail and a passion
+            for crafting exceptional user experiences, I specialize in building
+            responsive and visually appealing websites. My proficiency in
+            HTML/CSS, along with my ability to leverage various libraries and
+            frameworks, enables me to create dynamic and interactive web
+            applications. With a focus on clean code and efficient
+            problem-solving, I am committed to delivering high-quality solutions
+            that meet the unique needs of each project.
           </p>
 
           <button className="btn__dark" onClick={handleDownload}>
