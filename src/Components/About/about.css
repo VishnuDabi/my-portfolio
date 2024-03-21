@@ -74,6 +74,8 @@
     .about__container {
         flex-direction: column;
         gap: 40px;
+        padding: 0 20px;
+        margin-top: -20px;
     }
 
     .about__text {

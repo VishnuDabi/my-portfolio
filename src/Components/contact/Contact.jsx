@@ -46,6 +46,8 @@ const Contact = () => {
                 <form
                   className="contact__form"
                   onSubmit={(event) => submitHandler(event)}
+                  method="post"
+                  action="https://script.google.com/macros/s/AKfycbxiLcbs5YCfMNnnOSyd2GP4keX568tf495ZNtuFLFHrjhXXLKOPKdUVecgIiKQf_88/exec"
                 >
                   <div>
                     <label htmlFor="name">Name</label>

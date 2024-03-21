@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./header.css";
+import { Link } from "react-scroll";
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
 
@@ -32,7 +33,11 @@ const Header = () => {
         </div>
         <div className="header__child">
           <ul className="nav__list">
-            <li className="nav__items">Home</li>
+            <li className="nav__items">
+              <Link to="home" spy={true} smooth={true} duration={500}>
+                Home
+              </Link>
+            </li>
             <li className="nav__items">About</li>
             <li className="nav__items">portfolio</li>
             <li className="nav__items">News</li>

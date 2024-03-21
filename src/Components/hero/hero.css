@@ -1,7 +1,7 @@
 .hero__main__container {
     /* background-image: url("https://shanereact.ibthemespro.com/img/slider/3.jpg"); */
     background-image: url(../../../public/images/hero.jpg);
-    height: 100vh;
+    height: calc(100vh + 60px);
     position: relative;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -12,9 +12,9 @@
 
 /* hero text container */
 .hero__text {
-    width: 35%;
+    width: max-content;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 35%;
     transform: translate(-50%, -50%);
 
@@ -23,12 +23,13 @@
 .span__text {
     position: relative;
     text-transform: uppercase;
-    font-size: 60px;
+    font-size: clamp(22px, 5vw, 60px);
     -webkit-text-stroke: 1px #fff;
     color: transparent;
     font-weight: 900;
     line-height: 0px;
-
+    /* margin-bottom: 16px; */
+    margin-bottom: clamp(5px, 5vw, 15px);
     width: 0;
     /* overflow: hidden; */
     text-align: start;
@@ -36,10 +37,11 @@
 }
 
 .rotating-item-wrapper {
-    font-size: 60px;
+    /* font-size: 60px; */
+    font-size: clamp(22px, 5vw, 60px);
     overflow: hidden;
     position: relative;
-    height: 1.5em;
+    height: 1.2em;
     top: 10px;
     text-align: left;
     width: 0;
@@ -88,17 +90,17 @@
     }
 
     50% {
-        top: -1.5em;
+        top: -1.4em;
     }
 
     75% {
-        top: -3em;
+        top: -2.8em;
         opacity: 1;
     }
 
 
     100% {
-        top: -4.5em;
+        top: -4.2em;
         opacity: 0;
     }
 }
@@ -114,16 +116,17 @@
     border: 2px solid white;
     color: white;
     padding: 15px 30px;
-    font-size: 18px;
+    font-size: clamp(12px, 4vw, 20px);
     margin-top: 20px;
 }
 
 @media screen and (max-width:1200px) {
     .hero__main__container {
-        height: 60vh;
+        height: calc(65vh + 60px);
     }
 
 }
+
 
 @media screen and (max-width:850px) {
     .hero__main__container {
@@ -132,12 +135,21 @@
 
     }
 
+    .btn {
+        padding: 10px 15px;
+        margin-top: 5px;
+    }
+
 }
 
 @media screen and (max-width:441px) {
     .hero__main__container {
-        height: 50vh;
+        height: calc(50vh + 60px);
 
+    }
+
+    .hero__text {
+        left: 40%;
     }
 
 }

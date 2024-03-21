@@ -87,6 +87,12 @@ p {
     .skills__container,
     .skills__container__active {
         flex-direction: column;
+        padding: 0 20px;
 
     }
 }
+/* https: //docs.google.com/spreadsheets/d/e/2PACX-1vSqjxYcj9hmFci-lxX2QK1dkSWvhsxiQZ9EofntA33Lb_TXqdbfGpo-SCNrySihFD7ao2YuaVv3XXAH/pub?output=csv */
+
+/* 
+https: //script.google.com/macros/s/AKfycbxiLcbs5YCfMNnnOSyd2GP4keX568tf495ZNtuFLFHrjhXXLKOPKdUVecgIiKQf_88/exec
+ */
