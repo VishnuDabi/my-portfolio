@@ -37,7 +37,7 @@ const About = () => {
     document.body.removeChild(link);
   };
   return (
-    <section className="about__container">
+    <section className="about__container" name="about">
       <div className="about__child">
         <div>
           <img className="img" src="/images/about.jpg" alt="" />

@@ -39,7 +39,7 @@ const Skills = () => {
   }, []);
 
   return (
-    <section className="skill__section">
+    <section className="skill__section" name="skill">
       <div
         className={`${
           isVisible ? "skills__container__active " : "skills__container"

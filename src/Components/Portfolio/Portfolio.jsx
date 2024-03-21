@@ -25,7 +25,7 @@ const Portfolio = () => {
     // },
   ]);
   return (
-    <main className="portfolio__container">
+    <main className="portfolio__container" name="portfolio">
       <div>
         <h3>PORTFOLIO</h3>
         <h1>My Projects</h1>

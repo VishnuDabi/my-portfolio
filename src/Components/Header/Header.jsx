@@ -34,15 +34,71 @@ const Header = () => {
         <div className="header__child">
           <ul className="nav__list">
             <li className="nav__items">
-              <Link to="home" spy={true} smooth={true} duration={500}>
+              <Link
+                className="link"
+                to="home"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
                 Home
               </Link>
             </li>
-            <li className="nav__items">About</li>
-            <li className="nav__items">portfolio</li>
-            <li className="nav__items">News</li>
-            <li className="nav__items">Contact</li>
-            <li className="nav__items">Button</li>
+            <li className="nav__items">
+              <Link
+                className="link"
+                to="about"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                About
+              </Link>
+            </li>
+            <li className="nav__items">
+              <Link
+                className="link"
+                to="portfolio"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                Portfolio
+              </Link>
+            </li>
+            {/* <li className="nav__items">
+              <Link
+                className="link"
+                to="news"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                News
+              </Link>
+            </li> */}
+            <li className="nav__items">
+              <Link
+                className="link"
+                to="contact"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                Contact
+              </Link>
+            </li>
+            {/* <li className="nav__items">
+              <Link
+                className="link"
+                to="home"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                Button
+              </Link>
+            </li> */}
           </ul>
         </div>
       </div>

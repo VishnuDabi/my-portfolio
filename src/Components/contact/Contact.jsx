@@ -12,7 +12,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact__container">
+    <div className="contact__container" name="contact">
       <div className="bg__img__container">
         <img
           className="img-1"
