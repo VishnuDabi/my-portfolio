@@ -10,14 +10,24 @@ const Footer = () => {
     <section className="footer__main">
       <div className="footer__container">
         <div className="footer__icons">
-          <CiLinkedin />
-          <ImGithub />
-          <IoLogoInstagram />
-          <RiFacebookCircleLine />
-          <RiTwitterXLine />
+          <a href="" target="_blank">
+            <CiLinkedin className="footer_icon" />
+          </a>
+          <a href="https://github.com/VishnuDabi" target="_blank">
+            <ImGithub className="footer_icon" />
+          </a>
+          <a href="" target="_blank">
+            <IoLogoInstagram className="footer_icon" />
+          </a>
+          <a href="" target="_blank">
+            <RiFacebookCircleLine className="footer_icon" />
+          </a>
+          <a href="" target="_blank">
+            <RiTwitterXLine className="footer_icon" />
+          </a>
         </div>
         <div className="rights">
-          <p>© 2024 by ib-themes. All rights reserved.</p>
+          <p>© 2024 . All rights reserved.</p>
         </div>
       </div>
     </section>

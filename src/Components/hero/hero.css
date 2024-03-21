@@ -118,6 +118,7 @@
     padding: 15px 30px;
     font-size: clamp(12px, 4vw, 20px);
     margin-top: 20px;
+    cursor: pointer;
 }
 
 @media screen and (max-width:1200px) {

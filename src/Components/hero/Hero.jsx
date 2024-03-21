@@ -1,5 +1,6 @@
 import React from "react";
 import "./hero.css";
+import { Link } from "react-scroll";
 
 const Hero = () => {
   return (
@@ -18,7 +19,16 @@ const Hero = () => {
           </div>
         </div>
         <br />
-        <button className="btn btn__upper">see portfolio</button>
+
+        <Link
+          className="link"
+          to="portfolio"
+          spy={true}
+          smooth={true}
+          duration={600}
+        >
+          <button className="btn btn__upper">see portfolio</button>
+        </Link>
       </div>
     </div>
   );

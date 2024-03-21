@@ -57,8 +57,8 @@ a {
     transition: all 0.4s ease-in-out;
 }
 
-.card__text__container:hover .card__text__container p,
-a {
+.card__text__container:hover .card__text__container>p,
+.card__text__container>a {
     color: red;
 }
 

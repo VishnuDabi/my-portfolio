@@ -21,12 +21,16 @@
     color: white;
 }
 
+.footer_icon {
+    color: white;
+}
+
 .footer__icons>* {
     cursor: pointer;
     transition: all 0.4s ease-in-out;
 }
 
-.footer__icons>*:hover {
+.footer__icons>*:hover .footer_icon {
     transform: translateY(-10px);
     transition: all 0.4s ease-in-out;
     color: red;
