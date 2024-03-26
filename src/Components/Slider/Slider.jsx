@@ -52,7 +52,7 @@ function SwipeToSlide() {
   };
   return (
     <div className="slider__container">
-      <Slider {...settings}>
+      <Slider {...settings} className="slider_flex">
         <div>
           <h1 className="skills__logo">
             <RiJavascriptLine />

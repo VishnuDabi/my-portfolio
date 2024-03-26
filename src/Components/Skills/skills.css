@@ -1,12 +1,13 @@
 .skill__section {
     width: 100%;
     overflow: hidden;
+    padding: 40px 0;
 }
 
 .skills__container {
     padding: 60px 40px;
     display: flex;
-    width: min(1200px, 100%);
+    width: 90%;
     margin: auto;
     gap: 40px;
     transform: translateX(-20%);
@@ -15,7 +16,7 @@
 .skills__container__active {
     padding: 60px 40px;
     display: flex;
-    width: min(1200px, 100%);
+    width: 90%;
     margin: auto;
     gap: 40px;
     transform: translateX(0%);
@@ -82,15 +83,25 @@ p {
     to {}
 }
 
+@media screen and (max-width:1600) {
+
+    .skills__container,
+    .skills__container__active {
+        width: min(1200px, 100%);
+    }
+
+}
+
 @media screen and (max-width:993px) {
 
     .skills__container,
     .skills__container__active {
         flex-direction: column;
-        padding: 0 20px;
+        padding: 0 0px;
 
     }
 }
+
 /* https: //docs.google.com/spreadsheets/d/e/2PACX-1vSqjxYcj9hmFci-lxX2QK1dkSWvhsxiQZ9EofntA33Lb_TXqdbfGpo-SCNrySihFD7ao2YuaVv3XXAH/pub?output=csv */
 
 /* 

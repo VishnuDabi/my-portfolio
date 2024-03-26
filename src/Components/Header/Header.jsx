@@ -3,7 +3,7 @@ import "./header.css";
 import { Link } from "react-scroll";
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
-
+  const [menu, setMenu] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 100) {
@@ -11,6 +11,7 @@ const Header = () => {
       } else {
         setScrolled(false);
       }
+      if (window.innerWidth > 778) setMenu(false);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -20,6 +21,9 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []); // Empty dependency array to run the effect only once on mount
+  useEffect(() => {
+    console.log(window.innerWidth);
+  });
 
   return (
     <>
@@ -35,6 +39,7 @@ const Header = () => {
           <ul className="nav__list">
             <li className="nav__items">
               <Link
+                activeClass="active"
                 className="link"
                 to="home"
                 spy={true}
@@ -58,6 +63,17 @@ const Header = () => {
             <li className="nav__items">
               <Link
                 className="link"
+                to="skills"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                Skills
+              </Link>
+            </li>
+            <li className="nav__items">
+              <Link
+                className="link"
                 to="portfolio"
                 spy={true}
                 smooth={true}
@@ -66,17 +82,7 @@ const Header = () => {
                 Portfolio
               </Link>
             </li>
-            {/* <li className="nav__items">
-              <Link
-                className="link"
-                to="news"
-                spy={true}
-                smooth={true}
-                duration={500}
-              >
-                News
-              </Link>
-            </li> */}
+
             <li className="nav__items">
               <Link
                 className="link"
@@ -88,18 +94,78 @@ const Header = () => {
                 Contact
               </Link>
             </li>
-            {/* <li className="nav__items">
-              <Link
-                className="link"
-                to="home"
-                spy={true}
-                smooth={true}
-                duration={500}
-              >
-                Button
-              </Link>
-            </li> */}
           </ul>
+          <div className="menu" style={{ height: "30px", width: "40px" }}>
+            <div className="artboard ">
+              <div
+                className={`overlay ${menu ? "actives " : ""}`}
+                onClick={() => setMenu(!menu)}
+              >
+                <div className="button"></div>
+              </div>
+            </div>
+          </div>
+          <div className={`mobile_menu ${menu ? "menu__show" : "menu__hide"} `}>
+            <ul className="mobile__nav__list">
+              <li className="mobile__nav__items">
+                <Link
+                  activeClass="active"
+                  className="link"
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  Home
+                </Link>
+              </li>
+              <li className="mobile__nav__items">
+                <Link
+                  className="link"
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  About
+                </Link>
+              </li>
+              <li className="mobile__nav__items">
+                <Link
+                  className="link"
+                  to="skills"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  Skills
+                </Link>
+              </li>
+              <li className="mobile__nav__items">
+                <Link
+                  className="link"
+                  to="portfolio"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  Portfolio
+                </Link>
+              </li>
+
+              <li className="mobile__nav__items">
+                <Link
+                  className="link"
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                >
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </>

@@ -6,6 +6,18 @@
   padding: 0;
 }
 
+/* styles.css */
+.light-theme {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dark-theme {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+
 .roboto-thin {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
@@ -96,11 +108,26 @@
   transition: all 0.4s ease-in-out;
 }
 
+.active {
+  color: red !important;
+}
+
 .link {
   cursor: pointer;
   text-decoration: none;
-  color: #fff;
+  /* color: #fff; */
   background-color: transparent !important;
+}
+
+@media screen and (min-width:1600px) {
+
+  p,
+  span,
+  a {
+    font-size: 24px;
+
+  }
+
 }
 
 @media screen and (max-width:993px) {

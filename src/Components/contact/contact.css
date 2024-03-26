@@ -1,7 +1,8 @@
 .contact__container {
     width: 100%;
     position: relative;
-    height: 70vh;
+    height: 100vh;
+    z-index: 1;
 }
 
 .bg__img__container {
@@ -18,7 +19,7 @@
 .img-1 {
     width: 100%;
     position: absolute;
-    top: -1px;
+    top: -5px;
     rotate: 180deg;
     object-fit: cover;
 }
@@ -68,6 +69,7 @@
     background-color: #fff;
     width: min(1200px, 100%);
     position: relative;
+
 }
 
 /* close button container */

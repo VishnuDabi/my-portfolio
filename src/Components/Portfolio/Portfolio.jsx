@@ -31,14 +31,14 @@ const Portfolio = () => {
         <h1>My Projects</h1>
         <div className="my__projects">
           {imgData.map(({ img, link, webName }, index) => (
-            <div key={index}>
+            <div className="projects__cards" key={index}>
               <a href={link} target="_blank " rel="web-link">
-                <div className="projects__cards">
+                <div>
                   <img className="project__img" src={img} alt="" />
                   <div className="card__text__container">
                     <p>{webName}</p>
                     <span href={link} target="_blank " rel="web-link">
-                      Go to website
+                      Visit website
                     </span>
                   </div>
                 </div>

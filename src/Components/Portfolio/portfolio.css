@@ -1,5 +1,5 @@
 .portfolio__container {
-    width: min(1200px, 100%);
+    width: 90%;
     margin: auto;
     overflow: hidden;
     padding: 40px;
@@ -8,15 +8,16 @@
 .my__projects {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     gap: 20px;
+    /* height: 40vh; */
 }
 
 .projects__cards {
-    height: 200px;
+    /* height: 200px; */
     position: relative;
     overflow: hidden;
-    flex-basis: 30%;
+    flex-basis: 32%;
     z-index: 1;
 }
 
@@ -40,10 +41,11 @@
     justify-content: space-between;
     padding: 0 20px;
     transform: translateY(50px);
+
 }
 
-.card__text__container p,
-a {
+.card__text__container>* {
+    font-size: 16px !important;
     margin: 0;
     text-decoration: none;
     color: rgb(61, 59, 59);
@@ -62,17 +64,26 @@ a {
     color: red;
 }
 
-@media screen and (max-width:993px) {
+@media screen and (max-width:1600px) {
     .portfolio__container {
-        padding: 0 20px;
+        width: min(1200px, 100%);
+
+    }
+}
+
+
+@media screen and (max-width:1080px) {
+    .portfolio__container {
+        padding: 40px 20px;
     }
 
     .my__projects {
-        display: block;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .projects__cards {
-        height: 400px;
+        /* height: 400px; */
         margin: 10px 0;
         overflow: hidden;
         flex-basis: min(320px, 100%);

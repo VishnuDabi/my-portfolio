@@ -2,6 +2,14 @@
     width: 90%;
     padding: 40px 2%;
     margin: auto;
+    height: 25vh;
+}
+
+.slider_flex {
+    display: flex !important;
+    height: 100%;
+    align-items: center;
+
 }
 
 .slick-arrow {
