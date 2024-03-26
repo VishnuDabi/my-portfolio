@@ -10,19 +10,35 @@ const Footer = () => {
     <section className="footer__main">
       <div className="footer__container">
         <div className="footer__icons">
-          <a href="" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/vishnu-dabi-rajput"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <CiLinkedin className="footer_icon" />
           </a>
-          <a href="https://github.com/VishnuDabi" target="_blank">
+          <a
+            href="https://github.com/VishnuDabi"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <ImGithub className="footer_icon" />
           </a>
-          <a href="" target="_blank">
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <IoLogoInstagram className="footer_icon" />
           </a>
-          <a href="" target="_blank">
+          <a href="#" target="_blank" rel="noopener noreferrer">
             <RiFacebookCircleLine className="footer_icon" />
           </a>
-          <a href="" target="_blank">
+          <a
+            href="https://twitter.com/vishnu_dabi"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <RiTwitterXLine className="footer_icon" />
           </a>
         </div>
