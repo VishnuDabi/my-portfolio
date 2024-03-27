@@ -20,7 +20,7 @@ const About = () => {
   const handleDownload = () => {
     // Replace the Google Drive link with your actual link
     const fileUrl =
-      "https://drive.google.com/uc?export=download&id=1aN7Bdpl9Exn8BZ77XDkCtEq1yk2-FqzG";
+      "https://drive.google.com/uc?export=download&id=1XB03dzC7WBfxJGdu10-zg859MOTELD6F";
 
     // Create a temporary anchor element
     const link = document.createElement("a");

@@ -19,6 +19,7 @@
     gap: 20px;
     font-size: 22px;
     color: white;
+    justify-content: center;
 }
 
 .footer_icon {
@@ -34,6 +35,15 @@
     transform: translateY(-10px);
     transition: all 0.4s ease-in-out;
     color: red;
+}
+
+.normal_btn {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 @media screen and (max-width:778px) {

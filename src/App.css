@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+body {
+  font-family: roboto, sans-serif;
+}
+
 /* styles.css */
 .light-theme {
   background-color: #ffffff;
@@ -115,8 +119,21 @@
 .link {
   cursor: pointer;
   text-decoration: none;
-  /* color: #fff; */
+  color: #fff;
   background-color: transparent !important;
+}
+
+.scroll__top {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background: #000;
+  text-align: center;
+  line-height: 35px;
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  z-index: 2;
 }
 
 @media screen and (min-width:1600px) {

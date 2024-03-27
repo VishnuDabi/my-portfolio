@@ -8,6 +8,7 @@ import Portfolio from "./Components/Portfolio/Portfolio";
 import SliderComponent from "./Components/Slider/Slider";
 import Contact from "./Components/contact/Contact";
 import Footer from "./Components/Footer/Footer";
+import ScrollToTop from "./Components/ScrollToTop";
 const App = () => {
   return (
     <div>
@@ -19,6 +20,7 @@ const App = () => {
       <SliderComponent />
       <Contact />
       <Footer />
+      {/* <ScrollToTop /> */}
     </div>
   );
 };

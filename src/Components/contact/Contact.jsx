@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 import "./contact.css";
-
+import { useForm, ValidationError } from "@formspree/react";
 const Contact = () => {
   const [formShow, setFormShow] = useState(false);
-
+  const [state, handleSubmit] = useForm("mpzvyqyw");
   const handleShow = () => {
     setFormShow(!formShow);
   };
-  const submitHandler = (e) => {
-    e.preventDefault();
-  };
+  // const submitHandler = (e) => {
+  //   e.preventDefault();
+  //   handleSubmit();
+  // };
 
   return (
     <div className="contact__container" name="contact">
@@ -28,7 +29,7 @@ const Contact = () => {
           </div>
         )}
         {formShow && (
-          <div className={`text__container active`}>
+          <div className={`text__container active__contact__form`}>
             <div className="flex__container">
               <div className="flex__child">
                 <h2 className="text__black">Get in touch</h2>
@@ -45,7 +46,8 @@ const Contact = () => {
                 </div>
                 <form
                   className="contact__form"
-                  onSubmit={(event) => submitHandler(event)}
+                  // onSubmit={(event) => submitHandler(event)}
+                  onSubmit={handleSubmit}
                   method="post"
                   action="https://script.google.com/macros/s/AKfycbxiLcbs5YCfMNnnOSyd2GP4keX568tf495ZNtuFLFHrjhXXLKOPKdUVecgIiKQf_88/exec"
                 >
@@ -60,11 +62,17 @@ const Contact = () => {
                   <div>
                     <label htmlFor="email">Email</label>
                     <input
-                      type="email"
                       id="email"
+                      type="email"
+                      name="email"
                       placeholder="Enter Your Email ID"
                     />
                   </div>
+                  <ValidationError
+                    prefix="Email"
+                    field="email"
+                    errors={state.errors}
+                  />
                   <div>
                     <label htmlFor="subject">Subject</label>
                     <input type="text" placeholder="Subject" id="subject" />
@@ -73,11 +81,23 @@ const Contact = () => {
                     <label htmlFor="massage">Massage</label>
                     <textarea
                       type="text"
-                      id="massage"
+                      id="message"
+                      name="message"
                       placeholder="Enter Massage"
                     />
                   </div>
-                  <button className="btn__dark">Submit</button>
+                  <ValidationError
+                    prefix="Message"
+                    field="message"
+                    errors={state.errors}
+                  />
+                  <button
+                    className="btn__dark"
+                    type="submit"
+                    disabled={state.submitting}
+                  >
+                    Submit
+                  </button>
                 </form>
               </div>
               <div className="flex__child">

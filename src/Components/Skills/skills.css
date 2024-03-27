@@ -83,7 +83,7 @@ p {
     to {}
 }
 
-@media screen and (max-width:1600) {
+@media screen and (max-width:1600px) {
 
     .skills__container,
     .skills__container__active {
@@ -97,7 +97,7 @@ p {
     .skills__container,
     .skills__container__active {
         flex-direction: column;
-        padding: 0 0px;
+        padding: 0 20px;
 
     }
 }

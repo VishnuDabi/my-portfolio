@@ -31,9 +31,7 @@ const Footer = () => {
           >
             <IoLogoInstagram className="footer_icon" />
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <RiFacebookCircleLine className="footer_icon" />
-          </a>
+
           <a
             href="https://twitter.com/vishnu_dabi"
             target="_blank"
@@ -44,6 +42,11 @@ const Footer = () => {
         </div>
         <div className="rights">
           <p>© 2024 . All rights reserved.</p>
+        </div>
+        <div className="">
+          <a href="mailto:vishnudabi999@gmail.com" className="normal_btn">
+            Vishnudabi999@gmail.com
+          </a>
         </div>
       </div>
     </section>

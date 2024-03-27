@@ -1,5 +1,5 @@
 .hero__main__container {
-    /* background-image: url("https://shanereact.ibthemespro.com/img/slider/3.jpg"); */
+
     background-image: url(../../../public/images/hero.jpg);
     height: calc(100vh + 60px);
     position: relative;
@@ -121,9 +121,18 @@
     cursor: pointer;
 }
 
+
+@media screen and (max-width:1600px) {
+    .hero__main__container {
+        background-size: 120% 100%;
+    }
+}
+
 @media screen and (max-width:1200px) {
     .hero__main__container {
         height: calc(65vh + 60px);
+
+        background-size: cover;
     }
 
 }
@@ -131,7 +140,7 @@
 
 @media screen and (max-width:850px) {
     .hero__main__container {
-        background-size: cover;
+
         background-position: 75%;
 
     }
