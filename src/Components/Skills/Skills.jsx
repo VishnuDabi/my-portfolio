@@ -49,9 +49,11 @@ const Skills = () => {
         <div className="skills__childs">
           <h1>I have high skills in developing and programming</h1>
           <p>
-            I am working on a professional, visually sophisticated and
-            technologically proficient, responsive and multi-functional personal
-            portfolio template Shane.
+            As an skilled Developer in development and programming, I specialize
+            in crafting polished, visually striking, and technically proficient
+            solutions. Currently, I'm dedicated to creating a variety of
+            projects for personal use or practice, each meticulously designed to
+            hone my skills and push the boundaries of innovation.
           </p>
         </div>
         <div className="skills__childs">

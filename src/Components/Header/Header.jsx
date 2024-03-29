@@ -27,8 +27,13 @@ const Header = () => {
     };
   }, []); // Empty dependency array to run the effect only once on mount
   useEffect(() => {
-    console.log(window.innerWidth);
-  });
+    const element = document.body;
+    if (menu) {
+      element.style.overflow = "hidden";
+    } else {
+      element.style.overflow = "unset";
+    }
+  }, [menu]);
 
   return (
     <>
@@ -115,6 +120,7 @@ const Header = () => {
             <ul className="mobile__nav__list">
               <li className="mobile__nav__items">
                 <Link
+                  onClick={() => setMenu(!menu)}
                   activeClass="active"
                   className="link underline__effect"
                   to="home"
@@ -127,6 +133,7 @@ const Header = () => {
               </li>
               <li className="mobile__nav__items">
                 <Link
+                  onClick={() => setMenu(!menu)}
                   className="link underline__effect"
                   to="about"
                   spy={true}
@@ -138,6 +145,7 @@ const Header = () => {
               </li>
               <li className="mobile__nav__items">
                 <Link
+                  onClick={() => setMenu(!menu)}
                   className="link underline__effect"
                   to="skills"
                   spy={true}
@@ -149,6 +157,7 @@ const Header = () => {
               </li>
               <li className="mobile__nav__items">
                 <Link
+                  onClick={() => setMenu(!menu)}
                   className="link underline__effect"
                   to="portfolio"
                   spy={true}
@@ -161,6 +170,7 @@ const Header = () => {
 
               <li className="mobile__nav__items">
                 <Link
+                  onClick={() => setMenu(!menu)}
                   className="link underline__effect"
                   to="contact"
                   spy={true}

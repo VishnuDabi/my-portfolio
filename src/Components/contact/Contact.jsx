@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./contact.css";
-import { useForm, ValidationError } from "@formspree/react";
+import { useForm, ValidationError, useSubmit } from "@formspree/react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
@@ -28,7 +28,7 @@ const Contact = () => {
     state.succeeded = false;
     setOpen(false);
   };
-
+  console.log(useSubmit);
   useEffect(() => {
     <div>
       <Modal

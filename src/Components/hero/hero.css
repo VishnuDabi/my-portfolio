@@ -38,7 +38,7 @@
 
 .rotating-item-wrapper {
     /* font-size: 60px; */
-    font-size: clamp(22px, 5vw, 60px);
+    font-size: clamp(1.5em, 5vw, 3.8em);
     overflow: hidden;
     position: relative;
     height: 1.2em;
@@ -80,7 +80,7 @@
 
 @keyframes move {
     0% {
-        top: 1.5em;
+        top: 1em;
         opacity: 0;
     }
 
@@ -90,17 +90,16 @@
     }
 
     50% {
-        top: -1.4em;
+        top: -1.16em;
     }
 
     75% {
-        top: -2.8em;
+        top: -2.4em;
         opacity: 1;
     }
 
-
     100% {
-        top: -4.2em;
+        top: -3.5em;
         opacity: 0;
     }
 }
